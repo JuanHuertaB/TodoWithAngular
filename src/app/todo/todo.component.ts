@@ -2,16 +2,15 @@ import {Component} from '@angular/core';
 
 @Component({
     selector: 'app-todo',
-    templateUrl: './todo.component.html'
+    templateUrl: './todo.component.html',
+    styleUrls: ['./todo.component.css']
 
 })
 
 export class TodoComponent {
-    public nav: Array<any> = [];
+    
+    public title: string = 'Add a todo to get started '; 
 
     constructor(){
-        this.nav = [
-
-        ]
     }
 }

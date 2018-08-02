@@ -30,6 +30,6 @@ export class TodoListService {
   }
 
   public deleteTodo(id: number):void{
-    this.todos = this.todos.filter((todo) => todo.id !== id);
+    this.todos = this.todos.filter((todo)=> todo.id != id);
   } 
 }

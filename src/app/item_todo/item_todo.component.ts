@@ -11,12 +11,17 @@ export class ItemTodoComponent implements OnInit{
     
     @Input()
     private todo: Todo;
-    
+
     constructor(private todoService: TodoListService){
 
     }
 
     ngOnInit(){
 
+    }
+
+    private deleteTodo(): void{
+        console.log(this.todo.id);
+        //this.todoService.deleteTodo(this.todo.id);
     }
 }
