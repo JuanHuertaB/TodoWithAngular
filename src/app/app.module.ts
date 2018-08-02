@@ -3,15 +3,15 @@ import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { CounterComponent } from './counter/counter.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { CounterComponent } from './components/counter/counter.component';
 import {RouterModule, Routes} from '@angular/router'
-import { LayoutComponent } from './layout/layout.component';
-import { TodoComponent} from './todo/todo.component';
-import { InputTodoComponent } from './input_todo/input_todo.component';
+import { LayoutComponent } from './components/layout/layout.component';
+import { TodoComponent} from './components/todo/todo.component';
+import { InputTodoComponent } from './components/input_todo/input_todo.component';
 import { TodoListService} from './todo-list.service';
-import {ItemTodoComponent} from './item_todo/item_todo.component';
+import {ItemTodoComponent} from './components/item_todo/item_todo.component';
 
 const routes: Routes=[
   {

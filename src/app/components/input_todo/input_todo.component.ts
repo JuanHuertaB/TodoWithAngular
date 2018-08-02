@@ -1,5 +1,5 @@
-import { Component, OnInit } from '../../../node_modules/@angular/core';
-import { TodoListService } from '../todo-list.service';
+import { Component, OnInit } from '@angular/core';
+import { TodoListService } from '../../todo-list.service';
 @Component({
     selector: 'app-input_todo',
     templateUrl: './input_todo.component.html',
