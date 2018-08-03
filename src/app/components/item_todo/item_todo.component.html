@@ -1,5 +1,14 @@
 <ul class="list-group">
     <li class="list-group-item" *ngFor="let todo of todoService.allTodos()">
-        <button type="button" class="btn btn-outline-danger" (click)="todoService.deleteTodo(todo.id)">Remove</button> {{todo.text}}
+            <div >
+                <input type="checkbox" 
+                    aria-label="Checkbox for following text input" 
+                    (click)="todoService.updateStatus(todo.id)">
+                <button type="button" 
+                    class="btn btn-outline-danger" 
+                    (click)="todoService.deleteTodo(todo.id)" >Remove
+                </button>
+                    {{todo.text}}
+            </div>
     </li>
   </ul>

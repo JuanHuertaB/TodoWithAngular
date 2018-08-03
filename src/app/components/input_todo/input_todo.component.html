@@ -1,6 +1,9 @@
 <div class="form-group">
-    <input class="form-control"type="text" [(ngModel)] = "todoText" value={{todoText}} placeholder="New Todo">
-    <button class="btn btn-success" type="button" (click)="addTodo()">Send</button> 
+    <input class="form-control" 
+        type="text" [(ngModel)] = "todoText" 
+        value={{todoText}} 
+        placeholder="New Todo"
+        (keyup.enter)="addTodo()">
 </div>
 
 

@@ -31,5 +31,17 @@ export class TodoListService {
 
   public deleteTodo(id: number):void{
     this.todos = this.todos.filter((todo)=> todo.id != id);
+    console.log(this.todos);
   } 
+
+  public updateStatus(id: number): void{
+    if((this.todos.find((todo)=> todo.id == id))){
+      console.log("id: ", id);
+      let element = this.todos.find((todo)=> todo.id == id)
+      console.log("element: ", element);
+      element.completed == false ? element.completed = true : element.completed = false;
+      console.log("element: ", element);
+    }
+
+  }
 }
